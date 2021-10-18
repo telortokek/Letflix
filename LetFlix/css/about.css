@@ -1,0 +1,79 @@
+section#about{
+    color: white;
+}
+
+.aboutus{
+    padding-left: 1%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.history{
+    padding: 30px 30px 30px 30px;
+    /* border: 3px solid white; */
+    width: 30%;
+    left: 0;
+    text-align: left;
+}
+
+.history h1{
+    text-align: center;
+}
+
+.gambarceo{
+    display: flex;
+    justify-content: space-around;
+    box-shadow: 0 0 5px 5px white;
+    height: 25vh;
+    position: relative;
+}
+
+.investor-career{
+    padding: 30px 30px 30px 30px;
+    width: 30%;
+    text-align: right;
+}
+.investor-career h1{
+    text-align: center;
+}
+
+.gambarceo img{
+    width: auto;
+    height: 100%;
+}
+
+@media screen and (max-width: 900px){
+    section#about p{
+        font-size: 12px;
+    }    
+    .gambarceo{
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        width: 10vh;
+        justify-content: space-around;
+        box-shadow: 0 0 5px 5px white;
+        position: relative;
+    }
+    .gambarceo img{
+        width: 100%;
+    }
+    .aboutus{
+        padding-left: 1%;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        /* border: 3px solid white; */
+    }
+    .history{
+        padding: 5px 5px 5px 5px;
+        /* border: 3px solid white; */
+        width: 40%;
+        text-align: left;
+    }
+    .investor-career{
+        padding: 5px 5px 5px 5px;
+        width: 40%;
+        text-align: right;
+    }
+}

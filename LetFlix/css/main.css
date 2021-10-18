@@ -1,0 +1,337 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Century Gothic;
+    /* color: white; */
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+    overflow: hidden;
+    height: 100vh;
+}
+
+.container{
+    width: 100%;
+    height: 100%;
+}
+
+/* Navigation Bar */
+.nav{
+    display: flex;
+    z-index: 1;
+    position: fixed;
+    width: 100%;
+    background-color: black;
+    /* border: 3px solid white;     */
+}
+
+a{
+    color: white;
+}
+
+ul.navbar{
+    display: flex;
+    /* border: 3px solid green; */
+    /* margin-left: 72.5%; */
+    justify-content: right;
+    padding-bottom: .7%;
+}
+
+.menu{
+    width: 200px;
+    height: 40px;
+    opacity: .8;
+    line-height: 50px;
+    text-align: center;
+}
+
+ul{
+    margin: 0%;
+    padding: 0%;
+    list-style: none;
+    font-size: 15px;
+    justify-content: center;
+}
+
+a{
+    text-decoration: none;
+}
+
+.menu a:hover{
+    color: red;
+    transition: 0.6s;
+}
+
+.menu a.navigation:hover{
+    color: red;
+}
+
+ul.drop-menu li{
+    display: none;  
+    background-color: black;
+}
+
+.menu:hover > ul.drop-menu li{
+    display: block; 
+    animation:linear;
+    animation-name: drop-animation;
+    animation-duration: 700ms;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+.letflix{
+    position: fixed;
+    /* top: 0%; */
+    right: 5%;
+    /* border: solid white 3px; */
+    z-index: 3;
+    /* border: 3px solid white; */
+    font-size: 19px;
+    color: red;
+}
+
+.nav img{
+    width: 100px;
+    /* border: 3px solid white; */
+    position: fixed;
+    left: 94%;
+    /* border: 3px solid white; */
+    top: 0;
+}
+
+@keyframes drop-animation{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+/* For Each Section */
+
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* width: 100%; */
+    height: 100vh;
+}
+
+/* Section Home */
+.content{
+    /* border: 3px solid white; */
+    position: absolute;
+    width: 100%;
+    height: fit-content;
+}
+
+.quote{
+    color: white;
+    font-size: 32px;
+    width: fit-content;
+    /* border: 3px solid white; */
+    padding-left: 20%;
+    top: 100%;
+    height: 30%;
+}
+
+.explore{
+    background: red;
+    padding: 0 1% 1% 1%;
+    width: fit-content;
+    cursor: pointer;
+}
+
+.explore:hover{
+    color: black;
+    transition: 1s;
+}
+
+.features{
+    width: 125%;
+    padding-left: 0;
+    padding-top: 10%;
+    /* border: solid white 3px; */
+    /* position: absolute; */
+}
+
+.btn{
+    background: rgba(255, 255, 255, 0.5);
+    width: 12px;
+    height: 12px;
+    margin: 10px;
+    border-radius: 100%;
+    cursor: pointer;
+}
+
+.image{
+    height: 100vh;
+    width: 100%;
+    left: 0;
+    top: 0;
+    opacity: 0.11;
+    z-index: -1;
+}
+
+.slider{
+    width: 100%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    animation: zoom-in 6s linear infinite;
+    z-index: -1;
+}
+
+@keyframes zoom-in{
+    100%{
+        width: 120%;
+    }
+}
+
+.background-box{
+    width: 30%;
+    /* position: absolute; */
+    /* border: 3px solid red; */
+}
+
+.text-box h1{
+    text-align: center;
+    /* border: 3px solid green; */
+    margin-top: 1%;
+    color: white;
+}
+
+.red{
+    color: red;
+}
+
+.image1{
+    animation: slide1 18s linear infinite;
+}
+
+.image2{
+    animation: slide2 18s linear infinite;
+}
+
+.image3{
+    animation: slide3 18s linear infinite;
+}
+
+
+@keyframes slide1{
+    0%{
+        visibility: visible;
+    }
+    33%{
+        visibility: hidden;
+    }
+    66%{
+        visibility: hidden;
+    }
+    100%{
+        visibility: hidden;
+    }
+}
+
+@keyframes slide2{
+    0%{
+        visibility: hidden;
+    }
+    33%{
+        visibility: hidden;
+    }
+    66%{
+        visibility: visible;
+    }
+    66.05%{
+        visibility: hidden;
+    }
+    100%{
+        visibility: hidden;
+    }
+}
+
+@keyframes slide3{
+    0%{
+        visibility: hidden;
+    }
+    33%{
+        visibility: hidden;
+    }
+    66%{
+        visibility: hidden;
+    }
+    100%{
+        visibility: visible;
+    }
+}
+
+.mySlides {
+    display:none;
+    width: 100%;
+}
+
+.button-left, .button-right {
+    cursor:pointer;
+}
+
+.w3-center{
+    justify-content: space-around;
+    position: absolute;
+    width: 30%;
+    display: flex;
+}
+
+.w3-badge {
+    height: 5px;
+    width: 5px;
+    padding: 0;
+}
+
+.slider-content{
+    z-index: 0;
+    top: 30%;
+    left: 55%;
+    max-width: 30%;
+    color: white;
+    /* border: 3px solid white; */
+}
+
+.help{
+    display: flex;
+    flex-direction: row;
+    /* border: 3px solid white; */
+    justify-content: space-around;
+}
+.latest h1{
+    padding-top: 3%;
+    /* border:solid green 3px; */
+    /* margin-top: 2%; */
+}
+
+.slider-content h1{
+    padding-bottom: 5%;
+    text-align: center;
+    opacity: 0.7;
+}
+
+/* Dramas */
+
+section#dramas{
+    background: black;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 2;
+}
+
+@media screen and (max-width: 900px) {
+    body{
+        overflow: auto;
+    }
+}

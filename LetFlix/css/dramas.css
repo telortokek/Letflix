@@ -1,0 +1,41 @@
+section#dramas {
+    color: white;
+    justify-content: flex-start;
+}
+
+.dramas-container{
+    /* background-color: green; */
+    width: 90%;
+    height: 50vh;
+    margin-top:6vh;
+}
+
+.dramas-content h1{
+    font-size: 2em;
+}
+
+.dramas-images{
+    display:flex;
+    align-items: center;
+    height: 11.5em;
+    overflow-x: auto;
+}
+
+.dramas-content img{
+    height: 8em;
+    width: auto;
+    transition: 0.5s;
+    margin: 0 0 0 2vw;
+    border-radius: 10px;
+}
+
+.dramas-content img:hover{
+    height: 10em;
+    /* border-radius: 0; */
+    box-shadow: 0 0 15px 3px white;
+    transition: 0.5s;
+}
+
+@media screen and (max-width: 900px){
+    
+}

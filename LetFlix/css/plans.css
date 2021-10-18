@@ -1,0 +1,63 @@
+/* Plans */
+.Subs {
+    margin-top: 1%;
+    display: flex;
+    width: 100%;
+    height: 70%;
+    justify-content: space-evenly;
+    align-items: center;
+    /* background-color: green; */
+    /* border: 3px solid white;  */
+}
+
+.judul{
+    color: white;
+    font-size: 20px;
+}
+
+.table{
+    display: flex;
+    width: 20%;
+    height: 80%;
+    /* background-color: red; */
+    border: 2px solid red;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 20px;
+    color:white;
+    font-weight: bold ;
+    transition: .2s;
+    text-align: center;
+}
+
+.table-desc{
+    font-size: 1.8vh;
+}
+
+hr{
+    width: 100%;
+    padding:0;
+}
+
+hr.garis{
+    width: 40%;
+    border: 1 solid gray;
+}
+
+.sub-name{
+    padding: 3vh 0 0 0;
+}
+
+.count img{
+    width: 5vh;
+}
+
+.table:hover{
+    background-image: linear-gradient(red 10%, black 75% 0);
+    width: 25%;
+    height: 100%;
+    transition: .2s;
+    border:1;
+    cursor: pointer;
+}
